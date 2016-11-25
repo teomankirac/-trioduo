@@ -1,0 +1,239 @@
+core {
+	active-bg-color: #fff;
+	active-bg-opacity: 0.333;
+}
+
+edge {
+	curve-style: unbundled-bezier;
+	opacity: 1;
+	width: .25;
+	z-index: 0;
+	overlay-opacity: 0;
+}
+
+node {
+	font-size: 3;
+	font-weight: bold;
+
+	min-zoomed-font-size: 1;
+	content: data(name);
+	text-valign: center;
+	text-halign: center;
+	color: #FFF;
+	text-outline-width: 0;
+	text-outline-color: transparent;
+	text-outline-opacity: 0;
+	overlay-color: #FFF;
+
+	border-color: #939393;
+	border-opacity: 0.5;
+	border-width: .4;
+}
+
+node[NodeType = "Creaction"],
+node[NodeType = "CreactionType"] {
+	background-color: #a07aff;
+	width: mapData(Quality, 70, 100, 20, 50);
+	height: mapData(Quality, 70, 100, 20, 50);
+}
+
+node[NodeType = "Events"],
+node[NodeType = "EventsType"] {
+	background-color: #7FCA9F;
+	width: mapData(Quality, 70, 100, 20, 50);
+	height: mapData(Quality, 70, 100, 20, 50);
+}
+
+node[NodeType = "Wandering"],
+node[NodeType = "WanderingType"] {
+	background-color: salmon;
+	width: mapData(Quality, 70, 100, 20, 50);
+	height: mapData(Quality, 70, 100, 20, 50);
+}
+
+node[NodeType = "Moving"],
+node[NodeType = "MovingType"] {
+	background-color: #1FBED6;
+	width: mapData(Quality, 70, 100, 20, 50);
+	height: mapData(Quality, 70, 100, 20, 50);
+}
+
+node[NodeType = "Reflection"],
+node[NodeType = "ReflectionType"] {
+	background-color: #F9D08B;
+	width: mapData(Quality, 70, 100, 20, 50);
+	height: mapData(Quality, 70, 100, 20, 50);
+}
+
+node[NodeType = "Dummy"] {
+	background-color: #fff;
+	color: salmon;
+	font-size: 10;
+	font-weight: normal;
+	text-outline-color: transparent;
+}
+
+node[NodeType = "Salmon"] {
+	background-color: salmon;
+	color: #fff;
+	text-outline-color: transparent;
+}
+
+node[NodeType = "Fixed"] {
+	background-color: #a07aff;
+	color: #fff;
+	text-outline-color: transparent;
+}
+
+node[NodeType = "Blue"] {
+	background-color: #1FBED6;
+	color: #fff;
+	text-outline-color: transparent;
+}
+
+node[NodeType = "Yellow"] {
+	background-color: #F9D08B;
+	color: #fff;
+	text-outline-color: transparent;
+}
+
+node[NodeType = "Green"] {
+	background-color: #7FCA9F;
+	color: #fff;
+	text-outline-color: transparent;
+}
+
+node[NodeType = "Task"] {
+	background-color: #ccc;
+	color: #FFF;
+	text-outline-color: transparent;
+}
+
+edge[interaction = "default"] {
+	line-color: #ccc;
+	opacity: 1;
+	z-index: 9;
+	width: .25;
+}
+
+edge[interaction = "cc"] {
+	line-color: #ccc;
+	opacity: 0;
+	z-index: 9;
+	width: .25;
+}
+
+edge[interaction = "cw"] {
+	line-color: #1FBED6;
+	opacity: 0;
+	z-index: 9;
+	width: .25;
+}
+
+edge[interaction = "cz"] {
+	line-color: #7FCA9F;
+	opacity: 0;
+	z-index: 9;
+	width: .25;
+}
+
+edge[interaction = "xy"] {
+	line-color: #F9D08B;
+	opacity: 0;
+	z-index: 9;
+	width: .25;
+}
+
+edge[interaction = "xx"] {
+	line-color: salmon;
+	opacity: 0;
+	z-index: 9;
+	width: .25;
+}
+
+node.highlighted {
+	min-zoomed-font-size: 0;
+	 	font-size: 3.25;
+		z-index: 9999;
+		opacity: 1;
+}
+
+node.highlighted[NodeType = "Dummy"] {
+	min-zoomed-font-size: 0;
+	 	font-size: 14;
+		font-weight: normal;
+		z-index: 9999;
+		opacity: 1;
+}
+
+node.highlighted[NodeType = "Fixed"] {
+	min-zoomed-font-size: 0;
+		z-index: 9999;
+		background-opacity: .65;
+}
+
+node.highlighted[NodeType = "Task"] {
+	min-zoomed-font-size: 0;
+		z-index: 9999;
+		background-opacity: .65;
+}
+
+node.highlighted[NodeType = "Blue"] {
+	min-zoomed-font-size: 0;
+		z-index: 9999;
+		background-opacity: .65;
+}
+
+node.highlighted[NodeType = "Green"] {
+	min-zoomed-font-size: 0;
+		z-index: 9999;
+		background-opacity: .65;
+}
+
+node.highlighted[NodeType = "Yellow"] {
+	min-zoomed-font-size: 0;
+		z-index: 9999;
+		background-opacity: .65;
+}
+
+
+edge.highlighted {
+	opacity: .85
+	width: .15;
+	z-index: 9999;
+}
+
+edge.faded {
+	opacity: 0;
+}
+
+node.faded {
+	opacity: .25;
+	text-opacity: 1;
+}
+
+node:selected {
+	border-color: #f3f3f3;
+	border-opacity: 1;
+	border-width: 1.5;
+}
+
+node.mouseover {
+	opacity: 1;
+	border-color: #ccc;
+}
+
+node[NodeType = "Dummy"]:selected {
+	border-color: #ccc;
+	font-size: .65em;
+	border-opacity: .75;
+	border-width: .45;
+}
+
+.filtered {
+	display: none;
+}
+
+.connectednodes {
+	opacity: 0;
+}

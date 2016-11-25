@@ -1,0 +1,65 @@
+include ../mixins/flash-messages
+
+doctype html
+html
+
+	//- HTML HEADER
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+		title= title || 'TrioDuo'
+		link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+		link(href="/styles/site.min.css", rel="stylesheet")
+		link(href="/styles/styles.css", rel="stylesheet")
+
+		if user && user.canAccessKeystone
+			link(href="/keystone/styles/content/editor.min.css", rel="stylesheet")
+
+			script(src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.js")
+			script(src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js")
+
+		//- Include template-specific stylesheets by extending the css block
+		block css
+
+		//- Add any other template-specific HEAD tags by extending the head block
+		block head
+
+	//- HTML BODY
+	body
+
+		//- HEADER
+		#header: .container
+
+		//- BODY
+		#body
+
+			block intro
+			+flash-messages(messages)
+			block content
+
+		.container: #footer
+			p yup yup, what!
+
+
+		//- JAVASCRIPT
+
+		script(src='/js/jquery/jquery-1.11.3.min.js')
+		script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
+
+		if user && user.canAccessKeystone
+			script(src='/keystone/js/content/editor.js')
+
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.3/fastclick.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/bluebird/1.2.2/bluebird.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.4/typeahead.bundle.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+
+
+		block js

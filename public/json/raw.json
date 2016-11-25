@@ -1,0 +1,227 @@
+{
+   "format_version": "1.0",
+   "generated_by": "cytoscape-3.2.0",
+   "target_cytoscapejs_version": "~2.1",
+   "data": {
+      "selected": true,
+      "__Annotations": [],
+      "shared_name": "Network",
+      "SUID": 1,
+      "name": "Network"
+   },
+   "elements": {
+      "nodes": [
+         {
+            "data": {
+               "id": "1",
+               "Strength": 5,
+               "selected": false,
+               "cytoscape_alias_list": [
+                  "TrioDuo"
+               ],
+               "Main" : true,
+               "canonicalName": "TrioDuo",
+               "Blurb": "32 develops ideas, practice and material through constant exchange, creative action and reflection. This shared practice is an ongoing process and we would like to invite you to think, create and reflect with us. ",
+               "Quality": 120,
+               "Type": "Dummy",
+               "SUID": 1,
+               "NodeType": "Dummy",
+               "name": "32",
+               "shared_name": "TrioDuo"
+            },
+            "position": {
+               "x": 4515,
+               "y": 4597
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "2",
+               "selected": false,
+               "cytoscape_alias_list": [
+                  "Creaction"
+               ],
+               "Main" : true,
+               "canonicalName": "Creaction",
+               "Blurb": "Tasks inspired by a strong idea, process, piece of material or personal interaction. What do we think, feel and observe and what do we need to explore this further? ",
+               "Quality": 80,
+               "Type": "Creaction",
+               "SUID": 2,
+               "NodeType": "Creaction",
+               "name": "CreAction",
+               "shared_name": "Creaction"
+            },
+            "position": {
+               "x": 4491.779,
+               "y": 4647.2397
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "3",
+               "selected": false,
+               "cytoscape_alias_list": [
+                  "Events"
+               ],
+               "Main" : true,
+               "canonicalName": "Events",
+               "Blurb": "Click to see Events",
+               "Quality": 80,
+               "Type": "Events",
+               "SUID": 3,
+               "NodeType": "Events",
+               "name": "Events",
+               "shared_name": "Events"
+            },
+            "position": {
+               "x": 4491.779,
+               "y": 4547.2397
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "4",
+               "selected": false,
+               "cytoscape_alias_list": [
+                  "Wandering Thoughts"
+               ],
+               "Main" : true,
+               "canonicalName": "Wandering Thoughts",
+               "Blurb": "A space to think, reflect and write about the process, task outcome and anything else that seems relevant to share. ",
+               "Quality": 80,
+               "Type": "Wandering",
+               "SUID": 4,
+               "NodeType": "Wandering",
+               "name": "Wanderings",
+               "shared_name": "Wandering Thoughts"
+            },
+            "position": {
+               "x": 4579.779,
+               "y": 4637.2397
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "5",
+               "selected": false,
+               "cytoscape_alias_list": [
+                  "Moving Sounding"
+               ],
+               "Main" : true,
+               "canonicalName": "Moving Sounding",
+               "Blurb": "Tasks, methods and ideas about space, body, movement and sound. ",
+               "Quality": 80,
+               "Type": "Moving",
+               "SUID": 5,
+               "NodeType": "Moving",
+               "name": "Moving Sounding",
+               "shared_name": "Moving Sounding"
+            },
+            "position": {
+               "x": 4432.779,
+               "y": 4617.2397
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "6",
+               "selected": false,
+               "cytoscape_alias_list": [
+                  "Reflection Wall"
+               ],
+               "Main" : true,
+               "canonicalName": "Reflection Wall",
+               "Blurb": "Tasks to reflect on your artistic practice by articulating your thoughts, evaluating your wellbeing and exploring the different layers in your work.",
+               "Quality": 80,
+               "Type": "Reflection",
+               "SUID": 6,
+               "NodeType": "Reflection",
+               "name": "Reflection Wall",
+               "shared_name": "Reflection Wall"
+            },
+            "position": {
+               "x": 4592.779,
+               "y": 4577.2397
+            },
+            "selected": false
+         }
+      ],
+      "edges": [
+         {
+            "data": {
+               "id": "12",
+               "source": "1",
+               "target": "2",
+               "selected": false,
+               "canonicalName": "Creaction",
+               "SUID": 12,
+               "name": "Creaction",
+               "interaction": "default",
+               "shared_name": "Creaction"
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "13",
+               "source": "1",
+               "target": "3",
+               "selected": false,
+               "canonicalName": "Events",
+               "SUID": 13,
+               "name": "Events",
+               "interaction": "default",
+               "shared_name": "Events"
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "14",
+               "source": "1",
+               "target": "4",
+               "selected": false,
+               "canonicalName": "Wandering Thoughts",
+               "SUID": 14,
+               "name": "Wandering Thoughts",
+               "interaction": "default",
+               "shared_name": "Wandering Thoughts"
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "15",
+               "source": "1",
+               "target": "5",
+               "selected": false,
+               "canonicalName": "Moving Sounding",
+               "SUID": 15,
+               "name": "Moving Sounding",
+               "interaction": "default",
+               "shared_name": "Moving Sounding"
+            },
+            "selected": false
+         },
+         {
+            "data": {
+               "id": "16",
+               "source": "1",
+               "target": "6",
+               "selected": false,
+               "canonicalName": "Reflection Wall",
+               "SUID": 16,
+               "name": "Reflection Wall",
+               "interaction": "default",
+               "shared_name": "Reflection Wall"
+            },
+            "selected": false
+         }
+      ]
+   }
+}

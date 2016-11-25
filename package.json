@@ -1,0 +1,30 @@
+{
+  "name": "trioduo",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "async": "^1.5.0",
+    "browserify-middleware": "^7.1.0",
+    "cloudinary": "^1.4.4",
+    "csvtojson": "^1.0.3",
+    "cytoscape-panzoom": "^2.4.0",
+    "dotenv": "^2.0.0",
+    "embedly": "^2.1.0",
+    "keystone": "^0.3.19",
+    "lodash": "^4.13.1",
+    "moment": "^2.16.0",
+    "restful-keystone": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^2.12.0",
+    "eslint-config-keystone": "^2.3.1",
+    "eslint-plugin-react": "^5.1.1",
+    "gulp": "^3.7.0",
+    "gulp-shell": "^0.5.0",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node keystone.js"
+  }
+}
