@@ -73,6 +73,8 @@ Node.relationship({ ref: 'NodeComment', refPath: 'node', path: 'comments' });
  * ========
  */
 
+/* id instead of _id */
+
  Node.schema.set('toJSON', {
      transform: function (doc, ret, options) {
          ret.id = ret._id;
