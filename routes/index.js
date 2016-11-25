@@ -54,7 +54,9 @@ exports = module.exports = function (app) {
 			}),
 		],
 	}));
-
+	
+	//removed view from public
+	
 	app.get('/', routes.views.index);
 	app.get('/add');
 	app.get('/add/node/:node');
