@@ -3,22 +3,14 @@ extends ../layouts/default
 block content
 	#cy
 	#loading
-		span.fa.fa-refresh.fa-spin
+	 span.fa.fa-refresh.fa-spin
 	#search-wrapper
-		<h3 style="color: salmon; margin-left: 15px;">Click, drag, scroll, zoom in/out. We are 32!</h3>
+	 h3 Click, drag, scroll, zoom in/out. We are 32!
 	#info
-	<button id="reset" class="btn btn-default">32</button>
-	//#filter
-		//#filters
+	 button#reset 32
 
 block js
 
-	//script(src='/js/cytoscape.min.js')
-	script(src='/js/cytoscape.js')
-	<!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
+	script(src='/js/cytoscape.min.js')
 	script(src='http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.js')
-	<link href="http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/jquery.qtip.min.css" rel="stylesheet" type="text/css" />
-	<script src="http://cdn.rawgit.com/cytoscape/cytoscape.js-qtip/2.2.5/cytoscape-qtip.js"></script>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-
-	<script src="/js/main.js"></script>
+	script(src='/js/main.js')
