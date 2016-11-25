@@ -44,13 +44,6 @@ Edge.add({
 				},
 			},
 
-	//interaction: { type: Types.Select, options: 'cc, cw', default: 'cc', index: true },
-	//sharedInteraction: { type: Types.Select, options: 'cc, cw', default: 'cc', index: true },
-
-  //canonicalName: { type: String, index: true },
-  //SUID: { type: String, index: true },
-  //sharedName:  { type: String, index: true },
-
 });
 
 /**
@@ -67,7 +60,7 @@ Edge.schema.set('toJSON', {
       }
  });
 
-Edge.relationship({ ref: 'Edge', refPath: 'node', path: 'nodes' });//something here!!!!! what is it!!!!
+Edge.relationship({ ref: 'Edge', refPath: 'node', path: 'nodes' });
 
 Edge.defaultColumns = 'title, edges';
 Edge.register();
