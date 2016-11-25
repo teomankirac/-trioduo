@@ -28,7 +28,6 @@ exports = module.exports = function (req, res) {
 			if (node.state == 'published' || (req.user && req.user.isAdmin) || (req.user && node.author && (req.user.id == node.author.id))) {
 				locals.node = node;
 				locals.node.populateRelated('comments[author]', next);
-				//locals.page.title = node.title + ' - Buy - BuySwapSell';
 			} else {
 				return res.notfound('Node not found');
 			}
