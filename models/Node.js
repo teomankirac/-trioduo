@@ -64,6 +64,8 @@ Node.schema.virtual('description.full').get(function () {
  * =============
  */
 
+/* Add to index.js to view comments from data.description with handlebars from main.js */
+
 Node.relationship({ ref: 'NodeComment', refPath: 'node', path: 'comments' });
 
 /**
