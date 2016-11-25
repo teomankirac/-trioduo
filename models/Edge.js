@@ -51,6 +51,7 @@ Edge.add({
  * ========
  */
 
+/* To get id instead of _id from mongo */
 
 Edge.schema.set('toJSON', {
       transform: function (doc, ret, options) {
