@@ -56,14 +56,8 @@ exports = module.exports = function (app) {
 	}));
 
 	app.get('/', routes.views.index);
-	//app.get('/blog/:category?', routes.views.blog);
-	//app.get('/blog/post/:post', routes.views.post);
-
 	app.get('/add');
 	app.get('/add/node/:node');
-
-	//app.get('/gallery', routes.views.gallery);
-	//app.all('/contact', routes.views.contact);
 
 	// Api for
 	app.get('/api/edge/list', keystone.middleware.api, routes.api.edges.list);
